@@ -151,9 +151,9 @@ img {
 
 header {
     height: 400px;
-    background-image: url('img/background/Farid Ben Miles.jpg');
+    /*background-image: url('img/background/Farid Ben Miles.jpg');
     background-size: cover;
-    background-position: top center;
+    background-position: top center;*/
 }
 
 /* Video styles */
@@ -1020,7 +1020,7 @@ figcaption {
 
 @media only screen and (max-width :319px) {
     header {
-        background-image: url(img/background/Farid-Ben-Miles-mobile.jpg)
+        /*background-image: url(img/background/Farid-Ben-Miles-mobile.jpg)*/
     }
     h2 {
         font-size: 60px
@@ -1244,6 +1244,16 @@ figcaption {
 }
 
 @media only screen and (min-width :481px) and (max-width :767px) {
+	#social ul {
+        display: block;
+        gap: 1rem;
+        list-style: none;
+      }
+	#intro-box {
+        position: relative;
+		bottom: 0;
+		width: 540;
+      }
     .container {
         padding: 20px 20px 50px
     }
