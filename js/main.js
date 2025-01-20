@@ -117,7 +117,9 @@
 
 
     $(window).on('scroll',function(){
-        if($(this).scrollTop() > 5 && $(this).width() > 992) {
+		  /*[ Original Line // MyChange FBM ]
+    if($(this).scrollTop() > 5 && $(this).width() > 992) {*/
+        if($(this).scrollTop() > 5 ) {
             $(logo).attr('src',linkLogo2);
             $(header).addClass('header-fixed');
         }
