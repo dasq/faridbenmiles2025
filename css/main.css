@@ -89,19 +89,19 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 */
 @font-face {
   font-family: Cinzel;
-  src: url('../fonts/cinzel/static/Cinzel-Regular.ttf'); 
+  src: url('../fonts/Cinzel/static/Cinzel-Regular.ttf'); 
 }
 @font-face {
   font-family: CinzelBold;
-  src: url('../fonts/cinzel/static/Cinzel-Bold.ttf'); 
+  src: url('../fonts/Cinzel/static/Cinzel-Bold.ttf'); 
 }
 @font-face {
   font-family: Lora;
-  src: url('../fonts/lora/static/Lora-Regular.ttf'); 
+  src: url('../fonts/Lora/static/Lora-Regular.ttf'); 
 }
 @font-face {
   font-family: LoraSemiBold;
-  src: url('../fonts/lora/static/Lora-SemiBold.ttf'); 
+  src: url('../fonts/Lora/static/Lora-SemiBold.ttf'); 
 }
 
 
