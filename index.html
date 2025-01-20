@@ -1,301 +1,1359 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Farid Ben Miles | Acoustic Guitarist | Cinematic World Fingerstyle</title>
-    <meta name="google-site-verification" content="eSU3x6tnYAcUBaCoQxNqlI8M5U-cIH6y7nOQMhOqKik" />
-    <meta charset="utf-8" />
-    <meta name="description" content="With only the use of an acoustic guitar, Farid takes you in a “ travelling by ear ” experience. Includes bio, music, video, tour and photos.">
-    <meta name="copyright" content="Farid Ben Miles - 2016">
-    <meta property="og:title" content="Farid Ben Miles | Acoustic Guitarist | Cinematic World Fingerstyle">
-    <meta property="og:url" content="https://www.faridbenmiles.com">
-    <meta property="og:site_name" content="Farid Ben Miles - Cinematic World Fingerstyle">
-    <meta property="og:type" content=”website”>
-    <meta property="og:description" content="With only the use of an acoustic guitar, Farid takes you in a “ travelling by ear ” experience. Includes bio, music, video, tour and photos.">
-    <meta property="og:image" content="img/background/Farid-Ben-Miles-mobile.jpg">
-    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="mstile-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-    <script src="js/jquery-1.12.4.min.js"></script>
-	<script src="js/videoBanner.jsx"></script>
-    <script src="js/main.jsx"></script>
-    <script>
-        (function(e, t, a, n, c, s, o) {
-                e.GoogleAnalyticsObject = c, e[c] = e[c] || function() {
-                    (e[c].q = e[c].q || []).push(arguments)
-                }, e[c].l = 1 * new Date, s = t.createElement(a), o = t.getElementsByTagName(a)[0], s.async = 1, s.src = n, o.parentNode.insertBefore(s, o)
-            }(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga"), ga("create", "UA-72950144-1", "auto"), ga("send", "pageview");
-    </script>
-    <script src="js/one.js"></script>
-    <script>
-        function jsUpdateSize() {
-            var e = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight,
-                i = e - 60;
-            $("header").css({
-                height: i
-            })
-        }
-        window.onload = jsUpdateSize, window.onresize = jsUpdateSize;
-    </script> 
+	<title>Farid Ben Miles | Guitarist, Teacher, Composer, Fingerstyle</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 </head>
+<body class="animsition">
 
-<body>
-    <header>
-      <div class="video-container">
-        <video 
-          id="banner-video"
-          playsinline 
-          muted 
-          poster="img/background/Farid Ben Miles.jpg"
-        >
-          <source 
-            src="video/fbm-videobanner-short.mp4xxx" 
-            type="video/mp4"
-          >
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="overlay">
-        <div id="social">
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/faridbenmiles" target="_blank" rel="noopener noreferrer">
-                <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/facebook.svg" alt="Facebook">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.soundcloud.com/faridbenmiles" target="_blank" rel="noopener noreferrer">
-                <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/music-2.svg" alt="Soundcloud">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/channel/UC56Ud4a-E0FGQVqc9SUqksg" target="_blank" rel="noopener noreferrer">
-                <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/youtube.svg" alt="Youtube">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.flickr.com/photos/137623602@N04/" target="_blank" rel="noopener noreferrer">
-                <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/camera.svg" alt="Flickr">
-              </a>
-            </li>
-            <li>
-              <a href="#contact-link" class="smoothScroll">
-                <img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/mail.svg" alt="Mail">
-              </a>
-            </li>
-          </ul>
-        </div>
-		<div id="intro-box">
-			<div id="intro-title">
-				<h1>Farid Ben Miles</h1>
+	<!-- Header -->
+	<header>
+		<!-- Header desktop -->
+		<div class="wrap-menu-header gradient1 trans-0-4">
+			<div class="container h-full">
+				<div class="wrap_header trans-0-3">
+					<!-- Logo -->
+					<div class="logo">
+						<a href="index.html">
+							<img src="images/icons/logo-head-white.png" alt="FBM-LOGO" data-logofixed="images/icons/logo-head-white.png">
+						</a>
+					</div>
+
+					<!-- Menu -->
+					<div class="wrap_menu p-l-45 p-l-0-xl">
+						<nav class="menu">
+							<ul class="main_menu">
+								<li>
+									<a href="index.html">Home</a>
+								</li>
+								<li>
+									<a href="menu.html">Menu</a>
+								</li>
+								<li>
+									<a href="reservation.html">Reservation</a>
+								</li>
+								<li>
+									<a href="gallery.html">Lessons</a>
+									<ul class="sub_menu">
+										<li>
+											<a href="index.html">Home</a>
+										</li>
+										<li>
+											<a href="menu.html">Menu</a>
+										</li>
+										<li>
+											<a href="reservation.html">Reservation</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="about.html">About</a>
+								</li>
+								<li>
+									<a href="blog.html">Blog</a>
+								</li>
+								<li>
+									<a href="contact.html">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<!-- Social -->
+					<div class="social flex-w flex-l-m p-r-20">
+						<a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>
+
+						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
+					</div>
+				</div>
 			</div>
-			<div id="intro-text">
-				<p id="intro-text-sub">Guitarist - Teacher - Live Performer </p> 
-				</br>Passionate about creating music that connects cultures, generations and hearts.
-			</div>
-			<div id="intro-button">
-				<div class="fb-share-video"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=_30K8Bei_iI">Share on Facebook</a>
-				<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=_30K8Bei_iI">Share on Facebook</a></div>
-			
 		</div>
-      </div>
-    </header>
-    <div id="menu-container">
-        <div id="menu" class="fixed-nav-bar">
-            <div id="brand-link"><a href="#social" class="smoothScroll"><img id="brand" alt="Farid Ben Miles - Logo" src="img/logo/logo-head-white.png"/></a></div>
-            <nav>
-                <ul class="topnav">
-                    <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">Menu &#9776;</a></li>
-                    <li><a class="smoothScroll" href="#videos-link">Videos</a></li>
-                    <li><a class="smoothScroll" href="#tour-link">Tour dates TEST</a></li>
-                    <li><a class="smoothScroll" href="#music-link">Music</a></li>
-                    <li><a class="smoothScroll" href="#pictures-link">Pictures</a></li>
-                    <li><a class="smoothScroll" href="#about-link">About</a></li>
-                    <li class="dropdown">
-						<a class="smoothScroll" href="#tabs-link">Lesson</a>
-						<ul class="dropdown-content">
-							<li><a class="dropdown-content-element" href="#tabs-link">Lesson 1</a></li>
-							<li><a class="dropdown-content-element" href="#tabs-link">Lesson 2</a></li>
-							<li><a class="dropdown-content-element" href="#tabs-link">Lesson 3</a></li>
-						</ul>
-					</li>
-                    <li><a class="smoothScroll" href="#contact-link">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div><span class="anchor" id="videos-link"></span>
-    <section id="videos" class="container">
-        <div class="box">
-            <h2> My videos </h2>
-            <div id="player-container">
-                <div id="traditions" class="box-video">
-                    <h3>Traditions</h3>
-                    <h4>A powerful song in the image of the importance of traditions</h4>
-                    <div class="youtube-player" data-id="_30K8Bei_iI"></div>
-                    <div class="fb-share-video"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=_30K8Bei_iI">Share on Facebook</a></div>
-                </div>
-                <div id="tradivan" class="box-video">
-                    <h3>Tradivan (Caravan / Misirlou)</h3>
-                    <h4>A travel in the middle of Oriental culture and musical history</h4>
-                    <div class="youtube-player" data-id="Rv3SRhQrX5c"></div>
-                    <div class="fb-share-video"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v=_30K8Bei_iI">Share on Facebook</a></div>
-                </div>
-            </div>
-            <p><br>More videos will be uploaded soon! Subscribe on my <a href="https://www.youtube.com/channel/UC56Ud4a-E0FGQVqc9SUqksg?sub_confirmation=1" target="_blank">Youtube channel</a> <br>to be the first one to know when new videos are available.</p>
-        </div>
-    </section>
-    <div id="slide-1" class="slide-pic"></div><span class="anchor" id="tour-link"></span>
-    <section id="tour" class="container">
-        <div class="box-tour">
-            <div class="box">
-                <h2> My tour dates </h2><a href="https://www.songkick.com/artists/8780859" class="songkick-widget" data-theme="light" data-track-button="on" data-detect-style="true" data-font-color="#5C1417" data-background-color="transparent"></a>
-                <script
-                    src="//widget.songkick.com/widget.js"></script>
-            </div>
-        </div>
-        <div class="fb-share"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.faridbenmiles.com/index.html#tour-link">Share on Facebook</a></div>
-    </section>
-    <div id="slide-2" class="slide-pic"></div><span class="anchor" id="music-link"></span>
-    <section id="music" class="container">
-        <div class="box">
-            <h2> My music </h2>
-            <div id="player-container">
-                <div id="bandcamp-player" class="players">
-                    <h3>Album "Going Overseas"</h3>
-                    <p>I am happy to present you my CD <br>"<b>Going Overseas</b>"<br>wrote on my world travel.</p><br>
-                    <div class="iframe-container"><iframe style="border: 0; " src="https://bandcamp.com/EmbeddedPlayer/album=551000062/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://faridbenmiles.bandcamp.com/album/going-overseas">Going Overseas by Farid Ben Miles</a></iframe></div>
-                </div>
-                <div id="soundcloud-player" class="players">
-                    <h3>Demos of the album "Going Overseas"</h3>
-                    <p>The authentic demos of "<b>Going Overseas</b>" recorded during my travel (in my van, on the beach, at friends) + Bonus</p><br>
-                    <div class="iframe-container">
-                        <div id="demos-sc" class="soundcloud-player" data-id="128342976"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="fb-share"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.faridbenmiles.com/index.html#about-link">Share on Facebook</a></div>
-    </section>
-    <div id="slide-3" class="slide-pic"></div><span class="anchor" id="pictures-link"></span>
-    <section id="pictures" class="container">
-        <div class="box">
-            <h2> My pictures </h2>
-            <div id="flickr"> <iframe src="https://www.flickr.com/photos/137623602@N04/sets/72157661098192794/player/" height="531" width="800" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></div><br/>
-            <div
-                class="text-container">
-                <p>The last world trip I have made remains to be my main inspiration for my compositions. I have been influenced by the lovely people I met either in Sri Lanka or New Zealand and by the outstanding landscapes of the desert in Dubaï and also
-                    by the beauties of the ocean in Thaïland. It is difficult to transcribe those wonderful discoveries I made and that have influenced me forever. This is why I share with you my pictures for this unique experience via my <a href="https://www.flickr.com/photos/137623602@N04/"
-                        target="_blank">Flickr</a>. </p>
-        </div>
-        </div>
-        <div class="fb-share"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.faridbenmiles.com/index.html#pictures-link">Share on Facebook</a></div>
-    </section>
-    <div id="slide-4" class="slide-pic"></div><span class="anchor" id="about-link"></span>
-    <section id="about" class="container">
-        <div class="box-about">
-            <h2> That's me </h2>
-            <div class="text-container"><img id="Farid-Cartoon" alt="Farid Ben Miles - Cartoon" src="img/background/Farid-Cartoon.png" />
-                <p> This is with real excitement that I welcome you in my world! This journey is conducted with the acoustic sounds of my guitar telling you the stories of my travels.<br><br>Full of beautiful landscapes in my head and unforgettable people
-                    in my heart, I want to share with you the beauty of going overseas (photos displayed all along this website). Most of the time, I travelled just with my feet stuck at the same place but with my ears full of music. But recently, I enjoyeda
-                    world travel with just a backpack and my guitar. This has been life changing...<br><br>With only the use of an acoustic guitar, I take you in a “travelling by ear” experience and I hope communicating youthe love I have for our World.Asia,
-                    North Africa, Occident are just a part of where you will find yourself dreaming.</p><br><a href="about.html#about-me-link">More about me</a></div>
-        </div>
-        <div class="fb-share"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.faridbenmiles.com/index.html#about-link">Share on Facebook</a></div>
-    </section>
-    <div id="slide-5" class="slide-pic"></div><span class="anchor" id="tabs-link"></span>
-    <section id="tab-section" class="container">
-        <div class="box">
-            <h2> Guitar Tabs and Lessons </h2>
-            <div id="tabs-boxes">
-                <div id="tabs" class="tabs-cell">
-                    <h3>Guitar Tabs</h3>
-                    <p>I am currently working on the tabs of the CD "Going Overseas". I will notify you when they are availablle on the Newsletter.</p>
-                    <div id="mc_embed_signup">
-                        <form action="//faridbenmiles.us12.list-manage.com/subscribe/post?u=b48a727301057021e14543d69&amp;id=6fdffcc9f1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                            <div id="mc_embed_signup_scroll"><input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter email address" required>
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b48a727301057021e14543d69_6fdffcc9f1" tabindex="-1" value=""></div>
-                                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div id="lessons" class="tabs-cell">
-                    <div class="text-container">
-                        <h3> Lessons</h3>
-                        <p>Feel free to email me and we can set up some private lessons (Skype or face to face, depending on where we are on the planet). <br><br><br>
-                            <p><a id="mailto" href="mailto:faridbenmiles@gmail.com">faridbenmiles@gmail.com</a></p>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div id="slide-8" class="slide-pic"></div><span class="anchor" id="contact-link"></span>
-    <section id="contact" class="container">
-        <div class="box">
-            <h2> Contact me </h2>
-            <div id="contact-boxes">
-                <div id="contact-fb" class="contact-cell">
-                    <h3>Via Facebook</h3>
-                    <p>The best way to get in contact with me is via Facebook. This is also where I post the most news, videos and pictures.</p><br><a href="https://www.facebook.com/faridbenmiles">Facebook page</a></div>
-                <div id="contact-newsletter" class="contact-cell">
-                    <h3>Newsletter</h3>
-                    <div id="mc_embed_signup">
-                        <form action="//faridbenmiles.us12.list-manage.com/subscribe/post?u=b48a727301057021e14543d69&amp;id=6fdffcc9f1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                            <div id="mc_embed_signup_scroll"><label for="mce-EMAIL">To join the Newsletter, simply click on the link below.</label>
-                                <!-- <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter email address" required>-->
-                                <div class="clear">
-                                    </br><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div id="contact-other" class="contact-cell">
-                    <div class="text-container">
-                        <h3>Via Email</h3>
-                        <p>For any other requests, please contact me on this address<br><br>
-                            <p><a id="mailto" href="mailto:faridbenmiles@gmail.com">faridbenmiles@gmail.com</a></p>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div id="social-contact">
-                <h3>Social networks</h3>
-                <ul>
-                    <li><a href="https://www.facebook.com/faridbenmiles" title="Facebook" target="_blank"><img alt="Facebook" src="img/social/facebook.png"/></a></li>
-                    <li><a href="https://www.soundcloud.com/faridbenmiles" title="Soundcloud" target="_blank"><img alt="Soundcloud" src="img/social/soundcloud.png"/></a></li>
-                    <li><a href="https://www.faridbenmiles.bandcamp.com" title="Bandcamp" target="_blank"><img alt="Bandcamp" src="img/social/bandcamp.png"/></a></li>
-                    <li><a href="https://www.youtube.com/channel/UC56Ud4a-E0FGQVqc9SUqksg" title="Youtube" target="_blank"><img alt="Youtube" src="img/social/youtube.png"/></a></li>
-                    <li><a href="https://www.flickr.com/photos/137623602@N04/" title="Flickr"><img alt="Flickr" src="img/social/flickr.png"></a></li>
-                </ul>
-            </div>
-            <div id="social-break"> </div>
-        </div>
-    </section>
-    <footer id="footnote">© Copyright 2016-2018 Farid Ben Miles | <a href="mentions.html">Mentions légales</a> </footer>
-    <script>
-        function myFunction() {
-            document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
-        }
-    </script>
-</body>
+	</header>
 
+	<!-- Sidebar -->
+	<aside class="sidebar trans-0-4">
+		<!-- Button Hide sidebar -->
+		<button class="btn-hide-sidebar ti-close color0-hov trans-0-4"></button>
+
+		<!-- - -->
+		<ul class="menu-sidebar p-t-95 p-b-70">
+			<li class="t-center m-b-13">
+				<a href="index.html" class="txt19">Home</a>
+			</li>
+
+			<li class="t-center m-b-13">
+				<a href="menu.html" class="txt19">Menu</a>
+			</li>
+
+			<li class="t-center m-b-13">
+				<a href="gallery.html" class="txt19">Gallery</a>
+			</li>
+
+			<li class="t-center m-b-13">
+				<a href="about.html" class="txt19">About</a>
+			</li>
+
+			<li class="t-center m-b-13">
+				<a href="blog.html" class="txt19">Blog</a>
+			</li>
+
+			<li class="t-center m-b-33">
+				<a href="contact.html" class="txt19">Contact</a>
+			</li>
+
+			<li class="t-center">
+				<!-- Button3 -->
+				<a href="reservation.html" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
+					Reservation
+				</a>
+			</li>
+		</ul>
+
+		<!-- - -->
+		<div class="gallery-sidebar t-center p-l-60 p-r-60 p-b-40">
+			<!-- - -->
+			<h4 class="txt20 m-b-33">
+				Gallery
+			</h4>
+
+			<!-- Gallery -->
+			<div class="wrap-gallery-sidebar flex-w">
+				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
+					<img src="images/photo-gallery-thumb-01.jpg" alt="GALLERY">
+				</a>
+
+				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
+					<img src="images/photo-gallery-thumb-02.jpg" alt="GALLERY">
+				</a>
+
+				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
+					<img src="images/photo-gallery-thumb-03.jpg" alt="GALLERY">
+				</a>
+
+				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
+					<img src="images/photo-gallery-thumb-05.jpg" alt="GALLERY">
+				</a>
+
+				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
+					<img src="images/photo-gallery-thumb-06.jpg" alt="GALLERY">
+				</a>
+
+				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
+					<img src="images/photo-gallery-thumb-07.jpg" alt="GALLERY">
+				</a>
+
+				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
+					<img src="images/photo-gallery-thumb-09.jpg" alt="GALLERY">
+				</a>
+
+				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
+					<img src="images/photo-gallery-thumb-10.jpg" alt="GALLERY">
+				</a>
+
+				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
+					<img src="images/photo-gallery-thumb-11.jpg" alt="GALLERY">
+				</a>
+			</div>
+		</div>
+	</aside>
+
+	<!-- Slide1 -->
+	<section class="section-slide">
+		<div class="wrap-slick1">
+			<div class="slick1">
+				<div class="item-slick1 item1-slick1" style="background-image: url(images/background/faridbenmiles.jpg);">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-10">
+						
+
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-10" data-appear="fadeInUp">
+							<b>Farid Ben Miles</b>
+						</h2>
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
+							Guitarist - Teacher - Composer
+						</span>
+
+						<div class="wrap-btn-slide1 animated visible-false p-t-20" data-appear="zoomIn">
+							<!-- Button1 -->
+							<a href="menu.html" class="btn1 flex-c-m size5 txt3 trans-0-4">
+								Let's Talk
+							</a>
+						</div>
+					</div>
+				</div>
+<!--
+				<div class="item-slick1 item2-slick1" style="background-image: url(images/master-slides-02.jpg);">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="rollIn">
+							Welcome to
+						</span>
+
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
+							Pato Place
+						</h2>
+
+						<div class="wrap-btn-slide1 animated visible-false" data-appear="slideInUp">
+							
+							<a href="menu.html" class="btn1 flex-c-m size1 txt3 trans-0-4">
+								Look Menu
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item-slick1 item3-slick1" style="background-image: url(images/master-slides-01.jpg);">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
+							Welcome to
+						</span>
+
+						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="rotateInUpRight">
+							Pato Place
+						</h2>
+
+						<div class="wrap-btn-slide1 animated visible-false" data-appear="rotateIn">
+							
+							<a href="menu.html" class="btn1 flex-c-m size1 txt3 trans-0-4">
+								Look Menu
+							</a>
+						</div>
+					</div>
+				</div>
+-->
+			</div>
+
+			<!--<div class="wrap-slick1-dots"></div>-->
+		</div>
+	</section>
+
+	<!-- Welcome -->
+	<section class="section-welcome bg1-pattern p-t-120 p-b-105">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 p-t-45 p-b-30">
+					<div class="wrap-text-welcome t-center">
+						<span class="tit2 t-center">
+							This is me
+						</span>
+
+						<h3 class="tit3 t-center m-b-35 m-t-5">
+							Welcome
+						</h3>
+
+						<p class="t-center m-b-22 size3 m-l-r-auto">
+							Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
+						</p>
+
+						<a href="about.html" class="txt4">
+							Read more about me
+							<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+				
+				<div class="col-md-6 p-b-30">
+					<div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
+						<a href="about.html"><img src="images/photos/fbm - portrait - square.jpg" alt="IMG-OUR"></a>
+					</div>
+				</div>-
+				
+			</div>
+		</div>
+	</section>
+
+	<!-- Intro -->
+	<section class="section-intro">
+		<div class="header-intro parallax100 t-center p-t-135 p-b-158" style="background-image: url(images/background/Wakatipu.jpg);">
+			<span class="tit2 p-l-15 p-r-15">
+				Discover
+			</span>
+
+			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
+				Pato Place
+			</h3>
+		</div>
+
+		<div class="content-intro bg-white p-t-77 p-b-133">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 p-t-30">
+						<!-- Block1 -->
+						<div class="blo1">
+							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
+								<a href="#"><img src="images/intro-01.jpg" alt="IMG-INTRO"></a>
+							</div>
+
+							<div class="wrap-text-blo1 p-t-35">
+								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+									Romantic Restaurant
+								</h4></a>
+
+								<p class="m-b-20">
+									Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
+								</p>
+
+								<a href="#" class="txt4">
+									Learn More
+									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 p-t-30">
+						<!-- Block1 -->
+						<div class="blo1">
+							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
+								<a href="#"><img src="images/intro-02.jpg" alt="IMG-INTRO"></a>
+							</div>
+
+							<div class="wrap-text-blo1 p-t-35">
+								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+									Delicious Food
+								</h4></a>
+
+								<p class="m-b-20">
+									Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh urna
+								</p>
+
+								<a href="#" class="txt4">
+									Learn More
+									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 p-t-30">
+						<!-- Block1 -->
+						<div class="blo1">
+							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
+								<a href="#"><img src="images/intro-04.jpg" alt="IMG-INTRO"></a>
+							</div>
+
+							<div class="wrap-text-blo1 p-t-35">
+								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+									Red Wines You Love
+								</h4></a>
+
+								<p class="m-b-20">
+									Sed ornare ligula eget tortor tempor, quis porta tellus dictum.
+								</p>
+
+								<a href="#" class="txt4">
+									Learn More
+									<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our menu -->
+	<section class="section-ourmenu bg2-pattern p-t-115 p-b-120">
+		<div class="container">
+			<div class="title-section-ourmenu t-center m-b-22">
+				<span class="tit2 t-center">
+					Discover
+				</span>
+
+				<h3 class="tit5 t-center m-t-2">
+					Our Menu
+				</h3>
+			</div>
+
+			<div class="row">
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-sm-6">
+							<!-- Item our menu -->
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+								<img src="images/our-menu-01.jpg" alt="IMG-MENU">
+
+								<!-- Button2 -->
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size4">
+									Lunch
+								</a>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<!-- Item our menu -->
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+								<img src="images/our-menu-05.jpg" alt="IMG-MENU">
+
+								<!-- Button2 -->
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size5">
+									Dinner
+								</a>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<!-- Item our menu -->
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+								<img src="images/our-menu-13.jpg" alt="IMG-MENU">
+
+								<!-- Button2 -->
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size6">
+									Happy Hour
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-12">
+							<!-- Item our menu -->
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+								<img src="images/our-menu-08.jpg" alt="IMG-MENU">
+
+								<!-- Button2 -->
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size7">
+									Drink
+								</a>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<!-- Item our menu -->
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+								<img src="images/our-menu-10.jpg" alt="IMG-MENU">
+
+								<!-- Button2 -->
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size8">
+									Starters
+								</a>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<!-- Item our menu -->
+							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
+								<img src="images/our-menu-16.jpg" alt="IMG-MENU">
+
+								<!-- Button2 -->
+								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size9">
+									Dessert
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<!-- Event -->
+	<section class="section-event">
+		<div class="wrap-slick2">
+			<div class="slick2">
+				<div class="item-slick2 item1-slick2" style="background-image: url(images/bg-event-01.jpg);">
+					<div class="wrap-content-slide2 p-t-115 p-b-208">
+						<div class="container">
+							<!-- - -->
+							<div class="title-event t-center m-b-52">
+								<span class="tit2 p-l-15 p-r-15">
+									Upcomming
+								</span>
+
+								<h3 class="tit6 t-center p-l-15 p-r-15 p-t-3">
+									Events
+								</h3>
+							</div>
+
+							<!-- Block2 -->
+							<div class="blo2 flex-w flex-str flex-col-c-m-lg animated visible-false" data-appear="zoomIn">
+								<!-- Pic block2 -->
+								<a href="#" class="wrap-pic-blo2 bg1-blo2" style="background-image: url(images/event-02.jpg);">
+									<div class="time-event size10 txt6 effect1">
+										<span class="txt-effect1 flex-c-m t-center">
+											08:00 PM Tuesday - 21 November 2018
+										</span>
+									</div>
+								</a>
+
+								<!-- Text block2 -->
+								<div class="wrap-text-blo2 flex-col-c-m p-l-40 p-r-40 p-t-45 p-b-30">
+									<h4 class="tit7 t-center m-b-10">
+										Wines during specific nights
+									</h4>
+
+									<p class="t-center">
+										Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia
+									</p>
+
+									<div class="flex-sa-m flex-w w-full m-t-40">
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 days">
+												25
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Days
+											</span>
+										</div>
+
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 hours">
+												12
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Hours
+											</span>
+										</div>
+
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 minutes">
+												59
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Minutes
+											</span>
+										</div>
+
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 seconds">
+												56
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Seconds
+											</span>
+										</div>
+									</div>
+
+									<a href="#" class="txt4 m-t-40">
+										View Details
+										<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item-slick2 item2-slick2" style="background-image: url(images/bg-event-02.jpg);">
+					<div class="wrap-content-slide2 p-t-115 p-b-208">
+						<div class="container">
+							<!-- - -->
+							<div class="title-event t-center m-b-52">
+								<span class="tit2 p-l-15 p-r-15">
+									Upcomming
+								</span>
+
+								<h3 class="tit6 t-center p-l-15 p-r-15 p-t-3">
+									Events
+								</h3>
+							</div>
+
+							<!-- Block2 -->
+							<div class="blo2 flex-w flex-str flex-col-c-m-lg animated visible-false" data-appear="fadeInDown">
+								<!-- Pic block2 -->
+								<a href="#" class="wrap-pic-blo2 bg2-blo2" style="background-image: url(images/event-06.jpg);">
+									<div class="time-event size10 txt6 effect1">
+										<span class="txt-effect1 flex-c-m">
+											08:00 PM Tuesday - 21 November 2018
+										</span>
+									</div>
+								</a>
+
+								<!-- Text block2 -->
+								<div class="wrap-text-blo2 flex-col-c-m p-l-40 p-r-40 p-t-45 p-b-30">
+									<h4 class="tit7 t-center m-b-10">
+										Wines during specific nights
+									</h4>
+
+									<p class="t-center">
+										Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia
+									</p>
+
+									<div class="flex-sa-m flex-w w-full m-t-40">
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 days">
+												25
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Days
+											</span>
+										</div>
+
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 hours">
+												12
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Hours
+											</span>
+										</div>
+
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 minutes">
+												59
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Minutes
+											</span>
+										</div>
+
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 seconds">
+												56
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Seconds
+											</span>
+										</div>
+									</div>
+
+									<a href="#" class="txt4 m-t-40">
+										View Details
+										<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item-slick2 item3-slick2" style="background-image: url(images/bg-event-04.jpg);">
+					<div class="wrap-content-slide2 p-t-115 p-b-208">
+						<div class="container">
+							<!-- - -->
+							<div class="title-event t-center m-b-52">
+								<span class="tit2 p-l-15 p-r-15">
+									Upcomming
+								</span>
+
+								<h3 class="tit6 t-center p-l-15 p-r-15 p-t-3">
+									Events
+								</h3>
+							</div>
+
+							<!-- Block2 -->
+							<div class="blo2 flex-w flex-str flex-col-c-m-lg animated visible-false" data-appear="rotateInUpLeft">
+								<!-- Pic block2 -->
+								<a href="#" class="wrap-pic-blo2 bg3-blo2" style="background-image: url(images/event-01.jpg);">
+									<div class="time-event size10 txt6 effect1">
+										<span class="txt-effect1 flex-c-m">
+											08:00 PM Tuesday - 21 November 2018
+										</span>
+									</div>
+								</a>
+
+								<!-- Text block2 -->
+								<div class="wrap-text-blo2 flex-col-c-m p-l-40 p-r-40 p-t-45 p-b-30">
+									<h4 class="tit7 t-center m-b-10">
+										Wines during specific nights
+									</h4>
+
+									<p class="t-center">
+										Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia
+									</p>
+
+									<div class="flex-sa-m flex-w w-full m-t-40">
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 days">
+												25
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Days
+											</span>
+										</div>
+
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 hours">
+												12
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Hours
+											</span>
+										</div>
+
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 minutes">
+												59
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Minutes
+											</span>
+										</div>
+
+										<div class="size11 flex-col-c-m">
+											<span class="dis-block t-center txt7 m-b-2 seconds">
+												56
+											</span>
+
+											<span class="dis-block t-center txt8">
+												Seconds
+											</span>
+										</div>
+									</div>
+
+									<a href="#" class="txt4 m-t-40">
+										View Details
+										<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="wrap-slick2-dots"></div>
+		</div>
+	</section>
+
+	<!-- Booking -->
+	<section class="section-booking bg1-pattern p-t-100 p-b-110">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 p-b-30">
+					<div class="t-center">
+						<span class="tit2 t-center">
+							Reservation
+						</span>
+
+						<h3 class="tit3 t-center m-b-35 m-t-2">
+							Book table
+						</h3>
+					</div>
+
+					<form class="wrap-form-booking">
+						<div class="row">
+							<div class="col-md-6">
+								<!-- Date -->
+								<span class="txt9">
+									Date
+								</span>
+
+								<div class="wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="date">
+									<i class="btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18" aria-hidden="true"></i>
+								</div>
+
+								<!-- Time -->
+								<span class="txt9">
+									Time
+								</span>
+
+								<div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<!-- Select2 -->
+									<select class="selection-1" name="time">
+										<option>9:00</option>
+										<option>9:30</option>
+										<option>10:00</option>
+										<option>10:30</option>
+										<option>11:00</option>
+										<option>11:30</option>
+										<option>12:00</option>
+										<option>12:30</option>
+										<option>13:00</option>
+										<option>13:30</option>
+										<option>14:00</option>
+										<option>14:30</option>
+										<option>15:00</option>
+										<option>15:30</option>
+										<option>16:00</option>
+										<option>16:30</option>
+										<option>17:00</option>
+										<option>17:30</option>
+										<option>18:00</option>
+									</select>
+								</div>
+
+								<!-- People -->
+								<span class="txt9">
+									People
+								</span>
+
+								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<!-- Select2 -->
+									<select class="selection-1" name="people">
+										<option>1 person</option>
+										<option>2 people</option>
+										<option>3 people</option>
+										<option>4 people</option>
+										<option>5 people</option>
+										<option>6 people</option>
+										<option>7 people</option>
+										<option>8 people</option>
+										<option>9 people</option>
+										<option>10 people</option>
+										<option>11 people</option>
+										<option>12 people</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<!-- Name -->
+								<span class="txt9">
+									Name
+								</span>
+
+								<div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="name" placeholder="Name">
+								</div>
+
+								<!-- Phone -->
+								<span class="txt9">
+									Phone
+								</span>
+
+								<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="phone" placeholder="Phone">
+								</div>
+
+								<!-- Email -->
+								<span class="txt9">
+									Email
+								</span>
+
+								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email" placeholder="Email">
+								</div>
+							</div>
+						</div>
+
+						<div class="wrap-btn-booking flex-c-m m-t-6">
+							<!-- Button3 -->
+							<button type="submit" class="btn3 flex-c-m size13 txt11 trans-0-4">
+								Book Table
+							</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="col-lg-6 p-b-30 p-t-18">
+					<div class="wrap-pic-booking size2 bo-rad-10 hov-img-zoom m-l-r-auto">
+						<img src="images/booking-01.jpg" alt="IMG-OUR">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Review -->
+	<section class="section-review p-t-115">
+		<!-- - -->
+		<div class="title-review t-center m-b-2">
+			<span class="tit2 p-l-15 p-r-15">
+				Customers Say
+			</span>
+
+			<h3 class="tit8 t-center p-l-20 p-r-15 p-t-3">
+				Review
+			</h3>
+		</div>
+
+		<!-- - -->
+		<div class="wrap-slick3">
+			<div class="slick3">
+				<div class="item-slick3 item1-slick3">
+					<div class="wrap-content-slide3 p-b-50 p-t-50">
+						<div class="container">
+							<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
+								<img src="images/avatar-01.jpg" alt="IGM-AVATAR">
+							</div>
+
+							<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
+								<p class="t-center txt12 size15 m-l-r-auto">
+									“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”
+								</p>
+
+								<div class="star-review fs-18 color0 flex-c-m m-t-12">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+								</div>
+
+								<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
+									Marie Simmons ˗ New York
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item-slick3 item2-slick3">
+					<div class="wrap-content-slide3 p-b-50 p-t-50">
+						<div class="container">
+							<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
+								<img src="images/avatar-04.jpg" alt="IGM-AVATAR">
+							</div>
+
+							<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
+								<p class="t-center txt12 size15 m-l-r-auto">
+									“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”
+								</p>
+
+								<div class="star-review fs-18 color0 flex-c-m m-t-12">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+								</div>
+
+								<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
+									Marie Simmons ˗ New York
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item-slick3 item3-slick3">
+					<div class="wrap-content-slide3 p-b-50 p-t-50">
+						<div class="container">
+							<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
+								<img src="images/avatar-05.jpg" alt="IGM-AVATAR">
+							</div>
+
+							<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
+								<p class="t-center txt12 size15 m-l-r-auto">
+									“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”
+								</p>
+
+								<div class="star-review fs-18 color0 flex-c-m m-t-12">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+								</div>
+
+								<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
+									Marie Simmons ˗ New York
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="wrap-slick3-dots m-t-30"></div>
+		</div>
+	</section>
+
+
+	<!-- Video -->
+	<section class="section-video parallax100" style="background-image: url(images/bg-cover-video-02.jpg);">
+		<div class="content-video t-center p-t-225 p-b-250">
+			<span class="tit2 p-l-15 p-r-15">
+				Discover
+			</span>
+
+			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
+				Our Video
+			</h3>
+
+			<div class="btn-play ab-center size16 hov-pointer m-l-r-auto m-t-43 m-b-33" data-toggle="modal" data-target="#modal-video-01">
+				<div class="flex-c-m sizefull bo-cir bgwhite color1 hov1 trans-0-4">
+					<i class="fa fa-play fs-18 m-l-2" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Blog -->
+	<section class="section-blog bg-white p-t-115 p-b-123">
+		<div class="container">
+			<div class="title-section-ourmenu t-center m-b-22">
+				<span class="tit2 t-center">
+					Latest News
+				</span>
+
+				<h3 class="tit5 t-center m-t-2">
+					The Blog
+				</h3>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 p-t-30">
+					<!-- Block1 -->
+					<div class="blo1">
+						<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative">
+							<a href="blog-detail.html"><img src="images/blog-01.jpg" alt="IMG-INTRO"></a>
+
+							<div class="time-blog">
+								21 Dec 2017
+							</div>
+						</div>
+
+						<div class="wrap-text-blo1 p-t-35">
+							<a href="blog-detail.html"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+								Best Places for Wine
+							</h4></a>
+
+							<p class="m-b-20">
+								Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
+							</p>
+
+							<a href="blog-detail.html" class="txt4">
+								Continue Reading
+								<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 p-t-30">
+					<!-- Block1 -->
+					<div class="blo1">
+						<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative">
+							<a href="blog-detail.html"><img src="images/blog-02.jpg" alt="IMG-INTRO"></a>
+
+							<div class="time-blog">
+								15 Dec 2017
+							</div>
+						</div>
+
+						<div class="wrap-text-blo1 p-t-35">
+							<a href="blog-detail.html"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+								Eggs and Cheese
+							</h4></a>
+
+							<p class="m-b-20">
+								Duis elementum, risus sit amet lobortis nunc justo condimentum ligula, vitae feugiat
+							</p>
+
+							<a href="blog-detail.html" class="txt4">
+								Continue Reading
+								<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 p-t-30">
+					<!-- Block1 -->
+					<div class="blo1">
+						<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative">
+							<a href="blog-detail.html"><img src="images/blog-03.jpg" alt="IMG-INTRO"></a>
+
+							<div class="time-blog">
+								12 Dec 2017
+							</div>
+						</div>
+
+						<div class="wrap-text-blo1 p-t-35">
+							<a href="blog-detail.html"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
+								Style the Wedding Party
+							</h4></a>
+
+							<p class="m-b-20">
+								Sed ornare ligula eget tortor tempor, quis porta tellus dictum.
+							</p>
+
+							<a href="blog-detail.html" class="txt4">
+								Continue Reading
+								<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Sign up -->
+	<div class="section-signup bg1-pattern p-t-85 p-b-85">
+		<form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">
+			<span class="txt5 m-10">
+				Specials Sign up
+			</span>
+
+			<div class="wrap-input-signup size17 bo2 bo-rad-10 bgwhite pos-relative txt10 m-10">
+				<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email-address" placeholder="Email Adrress">
+				<i class="fa fa-envelope ab-r-m m-r-18" aria-hidden="true"></i>
+			</div>
+
+			<!-- Button3 -->
+			<button type="submit" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">
+				Sign-up
+			</button>
+		</form>
+	</div>
+
+
+	<!-- Footer -->
+	<footer class="bg1">
+		<div class="container p-t-40 p-b-70">
+			<div class="row">
+				<div class="col-sm-6 col-md-4 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-33">
+						Contact Us
+					</h4>
+
+					<ul class="m-b-70">
+						<li class="txt14 m-b-14">
+							<i class="fa fa-map-marker fs-16 dis-inline-block size19" aria-hidden="true"></i>
+							8th floor, 379 Hudson St, New York, NY 10018
+						</li>
+
+						<li class="txt14 m-b-14">
+							<i class="fa fa-phone fs-16 dis-inline-block size19" aria-hidden="true"></i>
+							(+1) 96 716 6879
+						</li>
+
+						<li class="txt14 m-b-14">
+							<i class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>
+							contact@site.com
+						</li>
+					</ul>
+
+					<!-- - -->
+					<h4 class="txt13 m-b-32">
+						Opening Times
+					</h4>
+
+					<ul>
+						<li class="txt14">
+							09:30 AM – 11:00 PM
+						</li>
+
+						<li class="txt14">
+							Every Day
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-6 col-md-4 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-33">
+						Latest twitter
+					</h4>
+
+					<div class="m-b-25">
+						<span class="fs-13 color2 m-r-5">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</span>
+						<a href="#" class="txt15">
+							@colorlib
+						</a>
+
+						<p class="txt14 m-b-18">
+							Activello is a good option. It has a slider built into that displays the featured image in the slider.
+							<a href="#" class="txt15">
+								https://buff.ly/2zaSfAQ
+							</a>
+						</p>
+
+						<span class="txt16">
+							21 Dec 2017
+						</span>
+					</div>
+
+					<div>
+						<span class="fs-13 color2 m-r-5">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</span>
+						<a href="#" class="txt15">
+							@colorlib
+						</a>
+
+						<p class="txt14 m-b-18">
+							Activello is a good option. It has a slider built into that displays
+							<a href="#" class="txt15">
+								https://buff.ly/2zaSfAQ
+							</a>
+						</p>
+
+						<span class="txt16">
+							21 Dec 2017
+						</span>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-4 p-t-50">
+					<!-- - -->
+					<h4 class="txt13 m-b-38">
+						Gallery
+					</h4>
+
+					<!-- Gallery footer -->
+					<div class="wrap-gallery-footer flex-w">
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
+							<img src="images/photo-gallery-thumb-01.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
+							<img src="images/photo-gallery-thumb-02.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
+							<img src="images/photo-gallery-thumb-03.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-04.jpg" data-lightbox="gallery-footer">
+							<img src="images/photo-gallery-thumb-04.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
+							<img src="images/photo-gallery-thumb-05.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
+							<img src="images/photo-gallery-thumb-06.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
+							<img src="images/photo-gallery-thumb-07.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-08.jpg" data-lightbox="gallery-footer">
+							<img src="images/photo-gallery-thumb-08.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
+							<img src="images/photo-gallery-thumb-09.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
+							<img src="images/photo-gallery-thumb-10.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
+							<img src="images/photo-gallery-thumb-11.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-12.jpg" data-lightbox="gallery-footer">
+							<img src="images/photo-gallery-thumb-12.jpg" alt="GALLERY">
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="end-footer bg2">
+			<div class="container">
+				<div class="flex-sb-m flex-w p-t-22 p-b-22">
+					<div class="p-t-5 p-b-5">
+						<a href="#" class="fs-15 c-white"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+						<a href="#" class="fs-15 c-white"><i class="fa fa-facebook m-l-18" aria-hidden="true"></i></a>
+						<a href="#" class="fs-15 c-white"><i class="fa fa-twitter m-l-18" aria-hidden="true"></i></a>
+					</div>
+
+					<div class="txt17 p-r-20 p-t-5 p-b-5">
+						Copyright &copy; 2018 All rights reserved  |  This template is made with <i class="fa fa-heart"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top bg0-hov" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+
+	<!-- Container Selection1 -->
+	<div id="dropDownSelect1"></div>
+
+	<!-- Modal Video 01-->
+	<div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
+
+		<div class="modal-dialog" role="document" data-dismiss="modal">
+			<div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
+
+			<div class="wrap-video-mo-01">
+				<div class="w-full wrap-pic-w op-0-0"><img src="images/icons/video-16-9.jpg" alt="IMG"></div>
+				<div class="video-mo-01">
+					<iframe src="https://www.youtube.com/embed/5k1hSu2gdKE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
+	<script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/slick-custom.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/parallax100/parallax100.js"></script>
+	<script type="text/javascript">
+        $('.parallax100').parallax100();
+	</script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
 </html>
