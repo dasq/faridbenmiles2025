@@ -448,6 +448,17 @@ input[type="date" i] {
   right: 12px !important;
 }
 
+/*[ Menu dropdown ]
+===========================================================*/
+.submenu-icon {
+	font-size: 8px;
+}
+
+.main_menu > li:hover > .submenu-icon {
+	transform: rotate(180deg); 
+}
+
+
 
 /*[ dropdown option ]
 ===========================================================*/
@@ -1239,6 +1250,17 @@ position: relative;
   transform: rotate(-90deg); 
 }
 
+/*[ Block6 -vFarid  ]
+///////////////////////////////////////////////////////////
+*/
+.blo6 {
+position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8) ;
+}
+
+
 /*[ Block2 ]
 ///////////////////////////////////////////////////////////
 */
@@ -1331,7 +1353,7 @@ position: relative;
 
 /*[ Impressions - Logos ]
 ///////////////////////////////////////////////////////////
-*/
+
 .section-impressions {
   background-attachment: fixed;
   background-position: center 0;
@@ -1341,10 +1363,52 @@ position: relative;
   box-shadow: inset 0px 2px 5px rgba(58, 46, 42, 0.5), inset 0px -2px 5px rgba(58, 46, 42, 0.5);
 
 }
-
 .section-impressions > .title-review > .tit2 {
 	color: white;
 }
+*/
+.section-impressions {
+	background-image: 
+    linear-gradient(rgba(109, 97, 75, 0.5), rgba(109, 97, 75, 0.5)), /* Top layer: semi-transparent color */
+    url(../images/icons/pattern1.png); /* Bottom layer: image */
+	background-repeat: repeat;
+	background-blend-mode: normal; /* Optional: Ensures layers blend properly */
+}
+
+.section-impressions > .title-review > .tit2 {
+	color: #222222;
+}
+
+.bg-gradient {
+  position: relative;
+  background: linear-gradient(
+    to top,
+    rgba(208, 201, 193, 1) 0%,     /* Exact end color (#D0C9C1) */
+    rgba(208, 201, 193, 0.9) 10%,  /* Slight transparency for smoother blending */
+    rgba(109, 97, 75, 0.2) 30%,    /* Gradual fade-out */
+    rgba(109, 97, 75, 0) 70%       /* Transparent */
+  );
+  z-index: 1;
+}
+
+.bg-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/icons/pattern1.png); /* Texture */
+  background-repeat: repeat;
+  opacity: 0.4; /* Subtle texture */
+  z-index: -1;
+}
+
+.bg-gradient > .title-review > .tit2 {
+	color: #222222;
+}
+
+
 
 /*[ Reviews ]
 ///////////////////////////////////////////////////////////

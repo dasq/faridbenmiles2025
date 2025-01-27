@@ -3101,14 +3101,14 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 	font-family: Lora, 'Source Sans Pro';
 	font-weight: 400;
 	font-size: 12px;
-	color: white;
+	color: #22222;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-shadow: 1px 1px 2px rgba(58, 46, 42, 0.2);
 }
 
 .txt5 {
-	font-family: Cinzel;
+	font-family: CinzelBold;
 	font-weight: 500;
 	font-size: 22px;
 	color: #333333;
@@ -3172,7 +3172,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 	font-family: Lora, 'Source Sans Pro';
 	font-weight: 400;
 	font-size: 18px;
-	color: white;
+	color: #22222;
 	line-height: 1.7;
 }
 
@@ -3611,7 +3611,7 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 */
 .bo1 {border: 1px solid #ebebeb;}
 .bo2 {border: 2px solid #d9d9d9;}
-.bo4 {border: 4px solid #5C1417;}
+.bo4 {border: 4px solid #601D1F;}
 
 .bo5-b {border-bottom: 1px solid #e6e6e6;}
 .bo5-r {border-right: 1px solid #e6e6e6;}
