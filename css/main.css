@@ -1018,13 +1018,15 @@ input[type="date" i] {
 */
 .btn2 {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   opacity: 0.9;
+  color: #5C1417;
+  padding:5px;
 }
 
 .btn2:hover {
-  background-color: #5C1417;
-  color: white;
+  background-color: #DCD7D2;
+
 }
 
 /*[ Button3 ]

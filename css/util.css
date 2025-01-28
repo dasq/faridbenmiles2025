@@ -2229,7 +2229,7 @@
 */
 /* ------------------------------------ */
 .c-white {color: white;}
-.c-white:hover {color: #F1D2C6;}
+.c-white:hover {color: #5C1417;}
 .c-black {color: black;}
 
 .c-hov-white:hover {color: white;}
@@ -3187,16 +3187,18 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 	font-family: Lora;
 	font-weight: 500;
 	font-size: 18px;
-	color: white;
+	color: #212529;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	text-decoration: underline;
+	text-underline-offset: 5px;
 }
 
 .txt14 {
 	font-family: Lora, 'Source Sans Pro';
 	font-weight: 400;
 	font-size: 13px;
-	color: white;
+	color: #212529;
 	line-height: 1.7;
 }
 
@@ -3204,7 +3206,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 	font-family: Lora, 'Source Sans Pro';
 	font-weight: 400;
 	font-size: 13px;
-	color: white;
+	color: #212529;
 	line-height: 1.7;
 }
 
@@ -3216,7 +3218,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 }
 
 .txt17 {
-	font-family: Noto+Sans;
+	font-family: Lora, 'Source Sans Pro';
 	font-size: 14px;
 	line-height: 1.7;
 	color: white;
@@ -3745,6 +3747,8 @@ EFFECT   EFFECT   EFFECT   EFFECT   EFFECT   EFFECT  EFFECT
 
 }
 
+.end-footer {
+  background-color: #5C1417;
 }
 
 .bg2-pattern {
@@ -3763,6 +3767,14 @@ EFFECT   EFFECT   EFFECT   EFFECT   EFFECT   EFFECT  EFFECT
 	box-shadow: inset 0px 2px 5px rgba(58, 46, 42, 0.5); 
 }
 
+.bg4{
+	background-size: cover;
+	background-color: #DED8D3;
+}
+
+.bg-red-transparent {
+	background-color: rgba(219, 215, 210, 0.8); /* RGB for #DBD7D2 with 80% opacity */
+}
 
 /*[ Hover ]
 -----------------------------------------------------------
